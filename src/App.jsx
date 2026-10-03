@@ -6,7 +6,7 @@ import Register from "./pages/Register/Register";
 import Overview from "./pages/Overview/Overview.jsx";
 // import Campaing from "./pages/Campaing/Campaing.jsx";
 import Comments from "./pages/comments/comments.jsx";
-
+import IsAuthenticated from "./components/isAuthenticated.jsx";
 import InstagramAccounts from "./pages/Instagram/InstagramAccounts.jsx";
 import Campaigns from './pages/campaingPage/campaing';
 import CreateCampaign from './pages/create Campaing/CreateCampaign';
