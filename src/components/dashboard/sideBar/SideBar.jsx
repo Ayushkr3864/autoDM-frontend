@@ -17,7 +17,7 @@ import {
   FiX,
 } from "react-icons/fi";
 
-import "./Sidebar.css";
+import "./SideBar.css";
 import { useState,useEffect } from 'react';
 
 function Sidebar({ isOpen, onClose }) {
