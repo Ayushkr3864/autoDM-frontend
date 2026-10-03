@@ -5,7 +5,7 @@ import Topbar from "../../components/dashboard/Topbar/Topbar";
 import Sidebar from "../../components/dashboard/sideBar/SideBar";
 import CampaignCard from "../../components/dashboard/CampaignCard/Campaign";
 
-import "./Campaing.css";
+import "./campaing.css";
 // import LoadingPage from './../../components/loader/LoadingPage';
 import { FiPlus, FiRefreshCw } from "react-icons/fi";
 import { useNavigate } from 'react-router-dom';
