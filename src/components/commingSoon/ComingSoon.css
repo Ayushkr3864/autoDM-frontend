@@ -1,0 +1,235 @@
+/* =========================
+   COMING SOON PAGE
+========================= */
+
+.coming-soon-page {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.coming-soon-container {
+  width: 100%;
+  max-width: 650px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 60px 40px;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 24px;
+
+  background: var(--card-bg);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.coming-soon-icon {
+  width: 82px;
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  border-radius: 22px;
+
+  background: var(--primary-light);
+
+  color: var(--primary-color);
+
+  font-size: 38px;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 14px;
+
+  margin-bottom: 18px;
+
+  border-radius: 999px;
+
+  background: var(--primary-light);
+
+  color: var(--primary-color);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.coming-soon-container h1 {
+  margin: 0;
+
+  font-size: 42px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  color: var(--text-primary);
+}
+
+
+/* Highlight */
+
+.coming-soon-container h1 span {
+  color: var(--primary-color);
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.coming-soon-description {
+  max-width: 520px;
+
+  margin: 20px 0 30px;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: var(--text-secondary);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.coming-soon-back-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--primary-color);
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.coming-soon-back-btn:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.92;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.coming-soon-back-btn svg {
+  font-size: 17px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .coming-soon-page {
+    padding: 24px 16px;
+  }
+
+  .coming-soon-container {
+    padding: 45px 24px;
+
+    border-radius: 20px;
+  }
+
+  .coming-soon-icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 32px;
+  }
+
+  .coming-soon-container h1 {
+    font-size: 32px;
+  }
+
+  .coming-soon-description {
+    font-size: 14px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .coming-soon-container {
+    padding: 35px 20px;
+  }
+
+  .coming-soon-container h1 {
+    font-size: 28px;
+  }
+
+  .coming-soon-description {
+    font-size: 14px;
+  }
+
+  .coming-soon-back-btn {
+    width: 100%;
+  }
+
+}

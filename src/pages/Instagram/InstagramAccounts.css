@@ -1,0 +1,547 @@
+.instagram-layout {
+    min-height: 100vh;
+    background: #f9fafb;
+}
+
+
+/* =========================
+   MAIN AREA
+========================= */
+
+.instagram-main {
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.instagram-content {
+    padding: 30px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.instagram-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+}
+
+.instagram-heading h1 {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #111827;
+
+    letter-spacing: -0.5px;
+}
+
+.instagram-heading p {
+    margin: 7px 0 0;
+
+    max-width: 550px;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   CONNECT BUTTON
+========================= */
+
+.connect-instagram-btn,
+.empty-connect-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6366f1
+    );
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.connect-instagram-btn {
+    padding: 11px 16px;
+
+    flex-shrink: 0;
+}
+
+.connect-instagram-btn:hover,
+.empty-connect-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 18px rgba(99, 102, 241, 0.25);
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.instagram-empty-state {
+    min-height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px dashed #e5e7eb;
+    border-radius: 16px;
+}
+
+.instagram-empty-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 16px;
+
+    background: rgba(139, 92, 246, 0.1);
+
+    color: #7c3aed;
+}
+
+.instagram-empty-icon svg {
+    width: 29px;
+    height: 29px;
+}
+
+.instagram-empty-state h2 {
+    margin: 0 0 8px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #111827;
+}
+
+.instagram-empty-state p {
+    max-width: 420px;
+
+    margin: 0 0 22px;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #6b7280;
+}
+
+.empty-connect-btn {
+    padding: 11px 17px;
+}
+
+
+/* =========================
+   CONNECTED ACCOUNTS
+========================= */
+
+.instagram-account-section {
+    width: 100%;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #111827;
+}
+
+.section-heading span {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   ACCOUNT GRID
+========================= */
+
+.instagram-account-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================
+   ACCOUNT CARD
+========================= */
+
+.instagram-account-card {
+    padding: 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.instagram-account-card:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(139, 92, 246, 0.3);
+
+    box-shadow:
+        0 8px 25px rgba(30, 27, 75, 0.07);
+}
+
+
+/* =========================
+   ACCOUNT TOP
+========================= */
+
+.account-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-profile {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.account-avatar {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6366f1
+    );
+
+    color: #ffffff;
+}
+
+.account-avatar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.account-profile h3 {
+    margin: 0 0 3px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #111827;
+}
+
+.account-profile p {
+    margin: 0;
+
+    font-size: 11px;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.account-menu-wrapper {
+    position: relative;
+}
+
+.account-menu-btn {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    cursor: pointer;
+}
+
+.account-menu-btn:hover {
+    background: #f3f4f6;
+
+    color: #6366f1;
+}
+
+.account-menu {
+    position: absolute;
+
+    top: 38px;
+    right: 0;
+
+    width: 150px;
+
+    padding: 5px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.1);
+
+    z-index: 20;
+}
+
+.account-menu button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.account-menu button:hover {
+    background: #f5f3ff;
+}
+
+.account-menu svg {
+    width: 14px;
+    height: 14px;
+}
+
+.account-menu .disconnect-option {
+    color: #ef4444;
+}
+
+.account-menu .disconnect-option:hover {
+    background: #fef2f2;
+}
+
+
+/* =========================
+   CARD BOTTOM
+========================= */
+
+.account-divider {
+    height: 1px;
+
+    margin: 16px 0 12px;
+
+    background: #e5e7eb;
+}
+
+.account-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-status {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    color: #16a34a;
+}
+
+.account-status svg {
+    width: 14px;
+    height: 14px;
+}
+
+.account-connected-date {
+    font-size: 10px;
+
+    color: #9ca3af;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+[data-theme="dark"] .instagram-layout {
+    background: #09090b;
+}
+
+[data-theme="dark"] .instagram-heading h1,
+[data-theme="dark"] .section-heading h2,
+[data-theme="dark"] .instagram-empty-state h2,
+[data-theme="dark"] .account-profile h3 {
+    color: #f4f4f5;
+}
+
+[data-theme="dark"] .instagram-heading p,
+[data-theme="dark"] .instagram-empty-state p,
+[data-theme="dark"] .account-profile p,
+[data-theme="dark"] .section-heading span {
+    color: #71717a;
+}
+
+[data-theme="dark"] .instagram-empty-state,
+[data-theme="dark"] .instagram-account-card {
+    background: #18181b;
+
+    border-color: #27272a;
+}
+
+[data-theme="dark"] .account-menu {
+    background: #18181b;
+
+    border-color: #27272a;
+}
+
+[data-theme="dark"] .account-menu button {
+    color: #e4e4e7;
+}
+
+[data-theme="dark"] .account-menu button:hover {
+    background: #27272a;
+}
+
+[data-theme="dark"] .account-menu-btn:hover {
+    background: #27272a;
+}
+
+[data-theme="dark"] .account-divider {
+    background: #27272a;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .instagram-main {
+        margin-left: 0;
+    }
+
+    .instagram-content {
+        padding: 24px 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .instagram-content {
+        padding: 20px 16px;
+    }
+
+    .instagram-heading {
+        flex-direction: column;
+    }
+
+    .connect-instagram-btn {
+        width: 100%;
+    }
+
+    .instagram-heading h1 {
+        font-size: 21px;
+    }
+
+    .instagram-empty-state {
+        min-height: 340px;
+
+        padding: 25px 18px;
+    }
+
+    .instagram-account-grid {
+        grid-template-columns: 1fr;
+    }
+}

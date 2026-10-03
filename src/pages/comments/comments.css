@@ -1,0 +1,131 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+
+/* =========================
+   MAIN AREA
+========================= */
+
+.dashboard-main {
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.dashboard-content {
+  padding: 30px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.dashboard-heading {
+  margin-bottom: 24px;
+}
+
+.dashboard-heading h1 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #111827;
+
+  letter-spacing: -0.5px;
+}
+
+.dashboard-heading p {
+  margin: 7px 0 0;
+
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+/* .dashboard-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+} */
+
+
+/* =========================
+   ACTIVITY
+========================= */
+
+/* .dashboard-activity {
+  width: 100%;
+} */
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+[data-theme="dark"] .dashboard-layout {
+  background: #09090b;
+}
+
+[data-theme="dark"] .dashboard-heading h1 {
+  color: #f4f4f5;
+}
+
+[data-theme="dark"] .dashboard-heading p {
+  color: #71717a;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .dashboard-main {
+    margin-left: 0;
+  }
+
+  .dashboard-content {
+    padding: 24px 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .dashboard-content {
+    padding: 20px 16px;
+  }
+
+  .dashboard-heading h1 {
+    font-size: 21px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+}
