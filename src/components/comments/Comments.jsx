@@ -11,7 +11,7 @@ import {
   FiExternalLink,
 } from "react-icons/fi";
 
-import "./Comments.css";
+import "./comments.css";
 
 function Comments() {
   const [comments, setComments] = useState([]);
