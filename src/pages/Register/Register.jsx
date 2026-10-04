@@ -57,7 +57,7 @@ function Register() {
 
    try {
      const response = await fetch(
-       "http://localhost:8080/api/auth/register/v1",
+       "https://autodm-latest.onrender.com/api/auth/register/v1",
        {
          method: "POST",
          headers: {
